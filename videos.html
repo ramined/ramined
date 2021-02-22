@@ -1,0 +1,135 @@
+<!--The Videos page-->
+<section class="content demo">
+    <div class="block-content">
+        <h3 class="block-title">Videos</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="filters">
+                    <span>Filters :</span>
+                    <ul id="video-filters">
+                        <li class="active" data-filter="*">All</li>
+                        <li data-filter=".entrepreneurship">Entrepreneurship</li>
+                        <li data-filter=".games">Games</li>
+                        <li data-filter=".other">Other</li>
+                    </ul>
+                </div>
+                <div class="classic portfolio-container row isotope" id="video-container">
+                    <!-- WORK 1 START -->
+                    <div class="col-sm-6 col-xs-12 portfolio-item games">
+                        <a class="open-project" onclick="loadSite('videos/video1.html')">
+                            <div class="portfolio-column">
+                                <img src="videos/thumbs/gdc15.jpg" alt=""></img>
+                                <div class="portfolio-content">
+                                    <h3>GDC: Rebooting a 4 year old Portfolio to the Top of the Charts</h3>
+                                    <p>Growth hacking, Games as a Service</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- WORK 1 END -->
+                    <!-- WORK 2 START -->
+                    <div class="col-sm-6 col-xs-12 portfolio-item entrepreneurship">
+                        <a class="open-project" onclick="loadSite('videos/video2.html')">
+                            <div class="portfolio-column">
+                                <img src="videos/thumbs/fif.png" alt=""></img>
+                                <div class="portfolio-content">
+                                    <h3>Finnish Parliament: Fostering Entrepreneurship</h3>
+                                    <p>Entrepreneurship, Privacy</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- WORK 2 END -->
+                    <!-- WORK 3 START -->
+                    <div class="col-sm-6 col-xs-12 portfolio-item entrepreneurship games">
+                        <a class="open-project" onclick="loadSite('videos/video3.html')">
+                            <div class="portfolio-column">
+                                <img src="videos/thumbs/qld.png" alt=""></img>
+                                <div class="portfolio-content">
+                                    <h3>Queensland Government: Halfbrick Academy</h3>
+                                    <p>Entrepreneurship, Innovation</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- WORK 3 END -->
+                    <!-- WORK 4 START -->
+                    <div class="col-sm-6 col-xs-12 portfolio-item games">
+                        <a class="open-project" onclick="loadSite('videos/video4.html')">
+                            <div class="portfolio-column">
+                                <img src="videos/thumbs/asm.jpg" alt=""></img>
+                                <div class="portfolio-content">
+                                    <h3>Assembly Seminars:Angry Birds on the Web</h3>
+                                    <p>Game Development</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- WORK 4 END -->
+                    <!-- WORK 5 START -->
+                    <div class="col-sm-6 col-xs-12 portfolio-item entrepreneurship">
+                        <a class="open-project" onclick="loadSite('videos/video5.html')">
+                            <div class="portfolio-column">
+                                <img src="videos/thumbs/stanford.png" alt=""></img>
+                                <div class="portfolio-content">
+                                    <h3>Stanford European Thought Leaders</h3>
+                                    <p>Entrepreneurship</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- WORK 5 END -->
+                    <!-- WORK 6 START -->
+                    <div class="col-sm-6 col-xs-12 portfolio-item other">
+                        <a class="open-project" onclick="loadSite('videos/video6.html')">
+                            <div class="portfolio-column">
+                                <img src="videos/thumbs/tedx.png" alt=""></img>
+                                <div class="portfolio-content">
+                                    <h3>TEDx - Does the Internet Make Us Stupid?</h3>
+                                    <p>Science, Flow, Cloud computing</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- WORK 6 END -->
+                    <!-- WORK 7 START -->
+                    <div class="col-sm-6 col-xs-12 portfolio-item games">
+                        <a class="open-project" onclick="loadSite('videos/video7.html')">
+                            <div class="portfolio-column">
+                                <img src="videos/thumbs/gdc16.jpg" alt=""></img>
+                                <div class="portfolio-content">
+                                    <h3>GDC - From F2P to Indie: Walking a Mile in an Indie's Shoes</h3>
+                                    <p>Growth, Publishing</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- WORK 7 END -->
+                </div>
+            </div>
+        </div>
+        </div>
+<!--    <div class="row text-center">
+        <div class="col-md-12 btn-email">
+            <a class="btn lowercase">shout@james.com</a>
+        </div>
+    </div>-->
+    <script>
+        //Video masonry
+        $('#video-filters').on('click', function() {
+            var $videosContainer = $('#video-container');
+            $videosContainer.isotope({
+                masonry: {
+                    columnWidth: '.portfolio-item'
+                },
+                itemSelector: '.portfolio-item'
+            });
+            $('#video-filters').on('click', 'li', function() {
+                $('#video-filters li').removeClass('active');
+                $(this).addClass('active');
+                var filterValue = $(this).attr('data-filter');
+                $videosContainer.isotope({ filter: filterValue });
+            });
+        });
+    </script>
+</section>

@@ -1,0 +1,68 @@
+<header class="game required-header col-md-12">
+    <div id="bg" class="bgimage"><img id="without-characters" src="./game/images/without_characters.png"></img>
+
+    <!-- posters -->
+        <div id="mysites" class="image"></div>
+        <div id="rovio" class="image"></div>
+        <div id="sauna" class="image"></div>
+        <div id="hack" class="image"></div>
+        <div id="door" class="image" style="background-image: none;"></div>
+        <div id="door_open" class="image" style="background-image: url(./game/images/door_open.png);"></div>
+        <div id="laptop" class="image" style="background-image: url(./game/images/laptop.png)"></div> 
+        <div id="sign" class="image"></div> 
+                    
+    <!-- table 2 -->
+        <div id="eiffel" class="image"></div>
+        <div id="note" class="image"></div>
+        <div id="globe" class="image"></div>
+                    
+    <!-- table 3 -->
+        <div id="rubik" class="image"></div>
+        <div id="nes" class="image"></div>
+                    
+    <!-- table 4 -->
+        <div id="slaptop" class="image"></div>
+                    
+    <!-- characters -->
+        <div id="ramine" class="image" style="background-image: url(./game/images/ramine_normal.png);"></div>
+        <div id="tetris" class="image" style="background-image: url(./game/images/tetris_normal.png);"></div>
+        <div id="spaceinvader" class="image" style="background-image: url(./game/images/spaceinvader_normal.png);"></div>
+        <div id="pacman" class="image" style="background-image: url(./game/images/pacman_normal.png);"></div>
+        <div id="pacmanOrbs"></div>
+        <div id="mario" class="image" style="background-image: url(./game/images/mario_normal.png);"></div>
+
+    <!-- animations -->
+    <!-- speak -->
+        <div id="ramine_speak" class="image" style="background-image: url(./game/images/ramine_speak.png);"></div>
+        <div id="tetris_speak" class="image" style="background-image: url(./game/images/tetris_speak.png);"></div>
+        <div id="spaceinvader_speak" class="image" style="background-image: url(./game/images/spaceinvader_speak.png);"></div>
+        <div id="pacman_speak" class="image" style="background-image: url(./game/images/pacman_speak.png);"></div>
+        <div id="mario_speak" class="image" style="background-image: url(./game/images/mario_speak.png);"></div>
+
+    <!-- blink -->
+        <div id="ramine_blink" class="image" style="background-image: url(./game/images/ramine_blink.png);"></div>
+        <div id="spaceinvader_blink" class="image" style="background-image: url(./game/images/spaceinvader_blink.png);"></div>
+        <div id="pacman_blink" class="image" style="background-image: url(./game/images/pacman_blink.png);"></div>
+        <div id="mario_blink" class="image" style="background-image: url(./game/images/mario_blink.png);"></div>
+
+    <!-- credits on top right corner -->
+        <div id="credits" class="image"></div>
+                    
+    <!-- text -->
+        <div id="text" style="visibility: hidden;"></div>
+        <div id="tetrisText" style="visibility: hidden;"></div>
+        <div id="ramineText" style="visibility: hidden;"></div>
+        <div id="spaceinvaderText" style="visibility: hidden;"></div>
+        <div id="pacmanText" style="visibility: hidden;"></div>
+        <div id="marioText" style="visibility: hidden;"></div> 
+    </div>
+
+    <script type="text/javascript" src="./game/game-strings.js"></script>
+    <script type="text/javascript" src="./game/game.js"></script>
+    <script>
+        $(document).ready(function() {
+            // start game
+            start();
+        });
+    </script>
+</header>

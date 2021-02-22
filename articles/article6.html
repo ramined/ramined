@@ -1,0 +1,35 @@
+<section class="content">
+    <div class="block-content">
+        <div class="project-media row">
+            <div class="col-md-6">
+                <img height="100%" width="100%" src="articles/images/readwrite.png" alt="" />
+            </div>
+            <div class="col-md-6">
+                <img height="100%" width="100%" src="articles/images/fruitninja.jpg" alt="" />
+            </div>
+        </div>
+        <div class="project-head">
+            <h1 class="block-title">Design Tips from the Designer of Fruit Ninja</h1>
+            <div class="tags"><span>Publication : </span> ReadWrite</div>
+            <div class="tags"><span>Date : </span> February 2016</div>
+            <div class="tags"><span><a href="https://readwrite.com/2016/02/23/lessons-from-fruit-ninja/">Original link</a></span></div>
+        </div>
+        <p class="project-description">
+We have been hosting a series of fireside chats at Storm8 (maker of mobile games such as Candy Blast Mania and Restaurant Story 2). Our guests are people who have made large contributions to mobile game development and want to give back to the community by sharing their thoughts on best practices. Earlier, we spoke with Rovio about <a href="https://readwrite.com/2016/02/08/rovio-branding/">How to Build Brands to Last</a>. This time, we spoke with Luke Muscat, former Chief Creative Officer at Halfback and now Creative Director and co-founder at PrettyGreat. He designed Fruit Ninja and Jetpack Joyride and is a recipient of an Apple Design Award.</p>
+<strong>The devil is in the details</strong>
+<p>The first prototype of Fruit Ninja was built in a single day. It was a simple affair: a little Flash game, where fruit would spawn from the bottom of the screen. You could slice it and your score would go up. You’d avoid slicing bombs or you’d fail. You could even set a high score.
+The idea was to validate that the game was fun very rapidly, the same way many products are designed. However, a key difference that enabled the game to feel good was the amount of time that was dedicated to polishing how visceral it felt. After all, it’s a game about waving a finger on a screen, but its promise is to make you feel like an awesome ninja slicing hordes of fruit.</p>
+<p>For example, in Fruit Ninja Kinect slicing the fruit had to feel “juicy.” The fruit’s 3D model consists of two meshes stuck together. One thing that helped make slicing feel better was to rotate the mesh of the fruit so that its divider would be at the line traced when the player would slice. This rotation happens instantly when the player slices, causing it to fall apart in two slices that look like the player cut them. The fruit are also treated as physics objects, pushing each other out. It helps make their behavior feel more natural and chaotic. The particle effects in the game are based on the same philosophy as fighting games, making the screen flash on each impact for a fraction of a second. Fruit also creates splatter, some of which gets dropped in a trail that follows the movement of your slice. When a player does a combo, a text pops up on the screen. The combo text is also treated as a physics object so that two bits of text do not overlap.</p>
+<p>In an infinite runner game such as Jetpack Joyride, it’s easy to overlook how to make the player’s death fun. Luke’s approach was to make death feel more rewarding and clear. When the player collides with a laser, the frame holds for a second. It interrupts the game, breaks its momentum, helping create a sense of impact. Having the frame hold also gives you a sense of why you died. This can also be amped up with effects. For example, particles that will flash over the whole screen for one frame, shaking the screen flashing the player or the laser, playing a sound effect, having a trail of smoke.</p>
+<p>There is an additional element to help create a sense of reward even though you have dies. When the player dies in Jetpack Joyride, the game’s character falls to the ground and bounces a little. This creates a small moment where they might get extra coins, slide a few more meters further. It creates a sense of wonder as to what will happen next. After the player dies, there’s a slot machine that helps the player feel good about having lost.</p>
+<img height="100%" width="100%" src="articles/images/jetpackjoyride.jpg" alt="" />
+<strong>Stack things in the player’s favor</strong>
+<p>In both Fruit Ninja and Jetpack Joyride, a great deal of attention was placed on making sure the game would make the player feel awesome. One example is how both games treat collisions. In infinite runners, most games will have pixel-perfect collisions. But you want the collision to be in the player’s favor. They need to feel like they cheated the system and got away with it. You can achieve this by having a smaller collision box. This allows close calls with the lasers for example. Having a more realistic approach is more likely to result in the player feeling like they barely hit this one pixel that killed them. Says Luke, “You want the collision in the game to feel gamey, not realistic.”<p>
+<p>In Fruit Ninja, slicing is handled with a similar care: the collision box for a fruit is actually much bigger than the fruit itself. If you swipe right next to it, it will slice. The inverse is true for bombs. Basically, it’s possible to slice right next to a fruit and a little on a bomb and it will count as a positive thing. This is counter-intuitive, but it makes sense if you’re trying to make the player feel great. The Kinect version of the game pushed things further: since the game’s input is much less precise than a touch screen, the developers had to infer what the player wanted to achieve. Where did the slice actually start and end? To solve this, they created a system that extrapolated the movement of the player. When you slice, it creates a line. On Kinect, this line is padded a little bit before and after the actual slice. This is done to assist the player because the padding will register slicing fruit, but not bombs.</p>
+<strong>Make randomness a little unfair</strong>
+<p>When asked about where to draw the line about empowering the player, Luke explained his unique take on how to handle randomness in games. Most games try to create a system that can never create unfair scenarios. His approach is the opposite. The idea behind this is to create a reason to come back to the game. “If I had this thing just right, I could beat my score!” In Fruit Ninja, bombs can overlap with the fruit a little bit. They push each other away, but it’s possible to have scenarios where the game will throw really unfair patterns at the player. The same applies to Jetpack Joyride’s lasers, that can spawn at positions that make them essentially impossible to avoid. If the game was purely about skill and without luck, the player would get a high score once and they would be maxed out. With randomness, they are able to keep coming back to the game, and it is a great fit for mobile, where you want to keep re-engaging the player.</p>
+
+
+    </div>
+</section>
+

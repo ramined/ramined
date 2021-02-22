@@ -1,0 +1,639 @@
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Press Start 2P'), local('PressStart2P-Regular'), url(./game-font.ttf) format('truetype');
+}
+
+.game-header {
+  margin-top: 50px;
+  color: #2B96A8 !important;
+  font-family: 'Press Start 2P';
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.game {
+  height: 490px;
+}
+
+.button, .button:hover, .button:focus {
+  color: black;
+}
+
+.required-header {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.required-header * {
+  color: white !important;
+}
+.required-header #text {
+  color: black !important;
+}
+
+.image {
+background-repeat: no-repeat;
+background-size: 100% auto;
+ cursor: hand;
+ cursor: pointer;
+ }
+#bg {
+max-width: 930px;
+max-height: 600px;
+width: auto;
+height: auto;
+position: absolute;
+top:7px;
+left: 5px;
+}
+#door {
+width: 111px;
+height: 132px;
+top: 225px;
+left: 101px;
+background-color: transparent;
+position: absolute;
+}
+#door_open {
+  width: 111px;
+  height: 132px;
+  top: 225px;
+  left: 101px;
+  visibility: hidden;
+  position: absolute;
+}
+#text {
+visibility: hidden;
+position: absolute;
+top: 440px;
+width: 920px;
+text-align: center;
+}
+#tetrisText {
+visibility: hidden;
+position: absolute;
+top: 285px;
+left:50px;
+text-align: left;
+font-size: 20px;
+width: 500px;
+}
+#ramineText {
+visibility: hidden;
+position: absolute;
+top: 200px;
+left:270px;
+text-align: left;
+font-size: 20px;
+width: 500px;
+}
+#spaceinvaderText {
+visibility: hidden;
+position: absolute;
+top: 185px;
+left:400px;
+text-align: right;
+font-size: 20px;
+width: 500px;
+}
+#marioText {
+visibility: hidden;
+position: absolute;
+top: 220px;
+left:320px;
+text-align: right;
+font-size: 20px;
+width: 600px;
+}
+#pacmanText {
+visibility: hidden;
+position: absolute;
+top: 300px;
+left:430px;
+text-align: left;
+font-size: 20px;
+width: 500px;
+}
+#tetris {
+  width: 111px;
+  height: 132px;
+  top: 312px;
+  left: 10px;
+  position: absolute;
+}
+#tetris_speak {
+  width: 111px;
+  height: 132px;
+  top: 312px;
+  left: 10px;
+  position: absolute;
+  visibility: hidden;
+}
+#ramine {
+  width: 105px;
+  height: 147px;
+  top: 220px;
+  left: 235px;
+  position: absolute;
+}
+#ramine_speak {
+  width: 105px;
+  height: 147px;
+  top: 220px;
+  left: 235px;
+  position: absolute;
+  visibility: hidden;
+}
+#ramine_blink {
+  width: 105px;
+  height: 147px;
+  top: 220px;
+  left: 235px;
+  position: absolute;
+  visibility: hidden;
+}
+#spaceinvader {
+  width: 90px;
+  height: 93px;
+  top: 230px;
+  left: 630px;
+  position: absolute;
+}
+#spaceinvader_speak {
+  width: 90px;
+  height: 93px;
+  top: 230px;
+  left: 630px;
+  position: absolute;
+  visibility: hidden;
+}
+#spaceinvader_blink {
+  width: 90px;
+  height: 93px;
+  top: 230px;
+  left: 630px;
+  position: absolute;
+  visibility: hidden;
+}
+#pacman {
+  width: 144px;
+  height: 99px;
+  top: 315px;
+  left: 708px;
+  position: absolute;
+}
+#pacman_speak {
+  width: 144px;
+  height: 99px;
+  top: 315px;
+  left: 708px;
+  position: absolute;
+  visibility: hidden;
+}
+#pacman_blink {
+  width: 144px;
+  height: 99px;
+  top: 315px;
+  left: 708px;
+  position: absolute;
+  visibility: hidden;
+}
+#mario {
+  width: 84px;
+  height: 111px;
+  top: 245px;
+  left: 800px;
+  position: absolute;
+}
+#mario_speak {
+  width: 84px;
+  height: 111px;
+  top: 245px;
+  left: 800px;
+  position: absolute;
+  visibility: hidden;
+}
+#mario_blink {
+  width: 84px;
+  height: 111px;
+  top: 245px;
+  left: 800px;
+  position: absolute;
+  visibility: hidden;
+}
+#laptop {
+  width: 90px;
+  height: 69px;
+  top: 320px;
+  left: 104px;
+  position: absolute;
+}
+#eiffel {
+  width: 35px;
+  height: 50px;
+  top: 275px;
+  left: 335px;
+  position: absolute;
+}
+#note {
+width: 55px;
+height: 30px;
+top: 300px;
+left: 370px;
+position: absolute;
+}
+#globe {
+width: 50px;
+height: 50px;
+top: 255px;
+left: 405px;
+position: absolute;
+}
+#sauna {
+width: 80px;
+height: 65px;
+top: 210px;
+left: 435px;
+position: absolute;
+}
+#rovio{
+width: 55px;
+height: 75px;
+top: 195px;
+left: 375px;
+position: absolute;
+}
+#mysites {
+width: 77px;
+height: 55px;
+top: 155px;
+left: 420px;
+position: absolute;
+}
+#hack {
+width: 105px;
+height: 100px;
+top: 160px;
+left: 570px;
+position: absolute;
+}
+#rubik{
+width: 35px;
+height: 40px;
+top: 340px;
+left: 540px;
+position: absolute;
+}
+#nes{
+width: 95px;
+height: 55px;
+top: 335px;
+left: 580px;
+position: absolute;
+}
+#slaptop {
+width: 90px;
+height: 70px;
+top: 255px;
+left: 720px;
+position: absolute;
+}
+#sign {
+width: 200px;
+height: 70px;
+top: 150px;
+left: 50px;
+position: absolute;
+}
+#credits{
+width: 50px;
+height: 50px;
+top: 5px;
+left: 890px;
+position: absolute;
+}
+.ItemContent{
+font-family: helvetica;
+}
+
+@media (max-width:1000px) {
+
+  .game-header {
+    margin-top: 10px;
+  }
+
+  .game {
+    height: calc(((100vw - 10px) * 0.45) + 50px);
+    padding: 0px;
+  }
+
+  #without-characters {
+    max-width: calc(100vw - 10px);
+    max-height: calc((100vw - 10px) * 0.45);
+    width: auto;
+    height: auto;
+  }
+
+  #bg {
+    max-width: calc(100vw - 10px);
+    max-height: calc((100vw - 10px) * 0.45);
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: auto;
+    left: 0px;
+  }
+
+  #laptop {
+    width: calc((60 / 620) *  (100vw - 10px));
+    height: calc((46 / 279) * ((100vw - 10px) * 0.45));
+    top: calc((213 / 279) * ((100vw - 20px) * 0.45));
+    left: calc((69 / 620) *  (100vw - 30px));
+    position: absolute;
+  }
+
+  #door {
+      width: calc((74 / 620) *  (100vw - 10px));
+      height: calc((88 / 279) * ((100vw - 10px) * 0.45));
+      top: calc((150 / 279) * ((100vw - 20px) * 0.45));
+      left: calc((67 / 620) *  (100vw - 30px));
+      background-color: transparent;
+      position: absolute;
+  }
+  #door_open {
+      width: calc((74 / 620) *  (100vw - 10px));
+      height: calc((88 / 279) * ((100vw - 10px) * 0.45));
+      top: calc((150 / 279) * ((100vw - 20px) * 0.45));
+      left: calc((67 / 620) *  (100vw - 30px));
+      visibility: hidden;
+      position: absolute;
+  }
+  #text {
+      visibility: hidden;
+      position: absolute;
+      top: calc((293 / 279) * ((100vw - 20px) * 0.45));
+      width: calc((613 / 620) *  (100vw - 10px));
+      text-align: center;
+      font-size: 15px;
+  }
+  #tetrisText {
+      visibility: hidden;
+      position: absolute;
+      top: calc((190 / 279) * ((100vw - 20px) * 0.45));
+      left:calc((33 / 620) *  (100vw - 30px));
+      text-align: left;
+      font-size: 15px;
+      width: calc((333 / 620) *  (100vw - 10px));
+  }
+  #ramineText {
+      visibility: hidden;
+      position: absolute;
+      top: calc((133 / 279) * ((100vw - 20px) * 0.45));
+      left:calc((180 / 620) *  (100vw - 30px));
+      text-align: left;
+      font-size: 15px;
+      width: calc((333 / 620) *  (100vw - 10px));
+  }
+  #spaceinvaderText {
+      visibility: hidden;
+      position: absolute;
+      top: calc((123 / 279) * ((100vw - 20px) * 0.45));
+      left:calc((266 / 620) *  (100vw - 30px));
+      text-align: right;
+      font-size: 15px;
+      width: calc((333 / 620) *  (100vw - 10px));
+  }
+  #marioText {
+      visibility: hidden;
+      position: absolute;
+      top: calc((147 / 279) * ((100vw - 20px) * 0.45));
+      left:calc((213 / 620) *  (100vw - 30px));
+      text-align: right;
+      font-size: 15px;
+      width: calc((200 / 620) *  (100vw - 10px));
+  }
+  #pacmanText {
+      visibility: hidden;
+      position: absolute;
+      top: calc((200 / 279) * ((100vw - 20px) * 0.45));
+      left:calc((287 / 620) *  (100vw - 30px));
+      text-align: left;
+      font-size: 15px;
+      width: calc((333 / 620) *  (100vw - 10px));
+  }
+  #tetris {
+    width: calc((74 / 620) *  (100vw - 10px));
+    height: calc((88 / 279) * ((100vw - 10px) * 0.45));
+    top: calc((208 / 279) * ((100vw - 20px) * 0.45));
+    left: calc((7 / 620) *  (100vw - 30px));
+    position: absolute;
+  }
+  #tetris_speak {
+      width: calc((74 / 620) *  (100vw - 10px));
+      height: calc((88 / 279) * ((100vw - 10px) * 0.45));
+      top: calc((208 / 279) * ((100vw - 20px) * 0.45));
+      left: calc((7 / 620) *  (100vw - 30px));
+      position: absolute;
+      visibility: hidden;
+  }
+  #ramine {
+    width: calc((70 / 620) *  (100vw - 10px));
+    height: calc((98 / 279) * ((100vw - 10px) * 0.45));
+    top: calc((146 / 279) * ((100vw - 20px) * 0.45));
+    left: calc((156 / 620) *  (100vw - 30px));
+    position: absolute;
+  }
+  #ramine_speak {
+    width: calc((70 / 620) *  (100vw - 10px));
+    height: calc((98 / 279) * ((100vw - 10px) * 0.45));
+    top: calc((146 / 279) * ((100vw - 20px) * 0.45));
+    left: calc((156 / 620) *  (100vw - 30px));
+    position: absolute;
+    visibility: hidden;
+  }
+  #ramine_blink {
+    width: calc((70 / 620) *  (100vw - 10px));
+    height: calc((98 / 279) * ((100vw - 10px) * 0.45));
+    top: calc((146 / 279) * ((100vw - 20px) * 0.45));
+    left: calc((156 / 620) *  (100vw - 30px));
+    position: absolute;
+    visibility: hidden;
+  }
+  #spaceinvader {
+    width: calc((60 / 620) *  (100vw - 10px));
+    height: calc((62 / 279) * ((100vw - 10px) * 0.45));
+    top: calc((153 / 279) * ((100vw - 20px) * 0.45));
+    left: calc((420 / 620) *  (100vw - 30px));
+    position: absolute;
+  }
+  #spaceinvader_speak {
+    width: calc((60 / 620) *  (100vw - 10px));
+    height: calc((62 / 279) * ((100vw - 10px) * 0.45));
+    top: calc((153 / 279) * ((100vw - 20px) * 0.45));
+    left: calc((420 / 620) *  (100vw - 30px));
+    position: absolute;
+    visibility: hidden;
+  }
+  #spaceinvader_blink {
+    width: calc((60 / 620) *  (100vw - 10px));
+    height: calc((62 / 279) * ((100vw - 10px) * 0.45));
+    top: calc((153 / 279) * ((100vw - 20px) * 0.45));
+    left: calc((420 / 620) *  (100vw - 30px));
+    position: absolute;
+    visibility: hidden;
+  }
+  #pacman {
+    width: calc((96 / 620) *  (100vw - 10px));
+    height: calc((66 / 279) * ((100vw - 10px) * 0.45));
+    top: calc((210 / 279) * ((100vw - 20px) * 0.45));
+    left: calc((478 / 620) *  (100vw - 30px));
+    position: absolute;
+  }
+  #pacman_speak {
+    width: calc((96 / 620) *  (100vw - 10px));
+    height: calc((66 / 279) * ((100vw - 10px) * 0.45));
+    top: calc((210 / 279) * ((100vw - 20px) * 0.45));
+    left: calc((478 / 620) *  (100vw - 30px));
+    position: absolute;
+    visibility: hidden;
+  }
+  #pacman_blink {
+    width: calc((96 / 620) *  (100vw - 10px));
+    height: calc((66 / 279) * ((100vw - 10px) * 0.45));
+    top: calc((210 / 279) * ((100vw - 20px) * 0.45));
+    left: calc((478 / 620) *  (100vw - 30px));
+    position: absolute;
+    visibility: hidden;
+  }
+  #mario {
+    width: calc((56 / 620) *  (100vw - 10px));
+    height: calc((74 / 279) * ((100vw - 10px) * 0.45));
+    top: calc((163 / 279) * ((100vw - 20px) * 0.45));
+    left: calc((533 / 620) *  (100vw - 30px));
+    position: absolute;
+  }
+  #mario_speak {
+    width: calc((56 / 620) *  (100vw - 10px));
+    height: calc((74 / 279) * ((100vw - 10px) * 0.45));
+    top: calc((163 / 279) * ((100vw - 20px) * 0.45));
+    left: calc((533 / 620) *  (100vw - 30px));
+    position: absolute;
+    visibility: hidden;
+  }
+  #mario_blink {
+    width: calc((56 / 620) *  (100vw - 10px));
+    height: calc((74 / 279) * ((100vw - 10px) * 0.45));
+    top: calc((163 / 279) * ((100vw - 20px) * 0.45));
+    left: calc((533 / 620) *  (100vw - 30px));
+    position: absolute;
+    visibility: hidden;
+  }
+
+      #eiffel {
+        width: calc((23 / 620) *  (100vw - 10px));
+        height: calc((33 / 279) * ((100vw - 10px) * 0.45));
+        top: calc((183 / 279) * ((100vw - 20px) * 0.45));
+        left: calc((223 / 620) *  (100vw - 30px));
+        position: absolute;
+      }
+      #note {
+      width: calc((36 / 620) *  (100vw - 10px));
+      height: calc((20 / 279) * ((100vw - 10px) * 0.45));
+      top: calc((200 / 279) * ((100vw - 20px) * 0.45));
+      left: calc((246 / 620) *  (100vw - 30px));
+      position: absolute;
+      }
+      #globe {
+      width: calc((33 / 620) *  (100vw - 10px));
+      height: calc((33 / 279) * ((100vw - 10px) * 0.45));
+      top: calc((170 / 279) * ((100vw - 20px) * 0.45));
+      left: calc((270 / 620) *  (100vw - 30px));
+      position: absolute;
+      }
+      #sauna {
+      width: calc((53 / 620) *  (100vw - 10px));
+      height: calc((43 / 279) * ((100vw - 10px) * 0.45));
+      top: calc((140 / 279) * ((100vw - 20px) * 0.45));
+      left: calc((290 / 620) *  (100vw - 30px));
+      position: absolute;
+      }
+      #rovio{
+      width: calc((36 / 620) *  (100vw - 10px));
+      height: calc((50 / 279) * ((100vw - 10px) * 0.45));
+      top: calc((130 / 279) * ((100vw - 20px) * 0.45));
+      left: calc((250 / 620) *  (100vw - 30px));
+      position: absolute;
+      }
+      #mysites {
+      width: calc((51 / 620) *  (100vw - 10px));
+      height: calc((37 / 279) * ((100vw - 10px) * 0.45));
+      top: calc((103 / 279) * ((100vw - 20px) * 0.45));
+      left: calc((280 / 620) *  (100vw - 30px));
+      position: absolute;
+      }
+      #hack {
+      width: calc((70 / 620) *  (100vw - 10px));
+      height: calc((67 / 279) * ((100vw - 10px) * 0.45));
+      top: calc((107 / 279) * ((100vw - 20px) * 0.45));
+      left: calc((380 / 620) *  (100vw - 30px));
+      position: absolute;
+      }
+      #rubik{
+      width: calc((23 / 620) *  (100vw - 10px));
+      height: calc((26 / 279) * ((100vw - 10px) * 0.45));
+      top: calc((226 / 279) * ((100vw - 20px) * 0.45));
+      left: calc((360 / 620) *  (100vw - 30px));
+      position: absolute;
+      }
+      #nes{
+      width: calc((62 / 620) *  (100vw - 10px));
+      height: calc((37 / 279) * ((100vw - 10px) * 0.45));
+      top: calc((223 / 279) * ((100vw - 20px) * 0.45));
+      left: calc((386 / 620) *  (100vw - 30px));
+      position: absolute;
+      }
+      #slaptop {
+      width: calc((60 / 620) *  (100vw - 10px));
+      height: calc((47 / 279) * ((100vw - 10px) * 0.45));
+      top: calc((170 / 279) * ((100vw - 20px) * 0.45));
+      left: calc((480 / 620) *  (100vw - 30px));
+      position: absolute;
+      }
+      #sign {
+      width: calc((133 / 620) *  (100vw - 10px));
+      height: calc((47 / 279) * ((100vw - 10px) * 0.45));
+      top: calc((100 / 279) * ((100vw - 20px) * 0.45));
+      left: calc((33 / 620) *  (100vw - 30px));
+      position: absolute;
+      }
+      #credits{
+      width: calc((33 / 620) *  (100vw - 10px));
+      height: calc((33 / 279) * ((100vw - 10px) * 0.45));
+      top: calc((3 / 279) * ((100vw - 20px) * 0.45));
+      left: calc((593 / 620) *  (100vw - 30px));
+      position: absolute;
+      }
+}
+
+@media (max-width:650px) {
+  #text {
+    font-size: 8px;
+  }
+  #tetrisText {
+    font-size: 8px;
+  }
+  #ramineText {
+    font-size: 8px;
+  }
+  #spaceinvaderText {
+    font-size: 8px;
+  }
+  #marioText {
+    font-size: 8px;
+  }
+  #pacmanText {
+    font-size: 8px;
+  }
+}

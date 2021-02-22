@@ -1,0 +1,149 @@
+<!--The Articles page-->
+<section class="content demo">
+    <div class="block-content">
+        <h3 class="block-title">Articles</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="filters">
+                    <span>Filters :</span>
+                    <ul id="article-filters">
+                        <li class="active" data-filter="*">All</li>
+                        <li data-filter=".entrepreneurship">Entrepreneurship</li>
+                        <li data-filter=".games">Games</li>
+                        <li data-filter=".other">Other</li>
+                    </ul>
+                </div>
+                <div class="classic portfolio-container row isotope" id="article-container">
+                    <!-- WORK 1 START -->
+                    <div class="col-sm-6 col-xs-12 portfolio-item entrepreneurship games">
+                        <a class="open-project" onclick="loadSite('articles/article1.html')">
+                            <div class="portfolio-column">
+                                <img src="articles/images/gamasutra.png" alt="">
+                                <div class="portfolio-content">
+                                    <h3>How the Shape of Tokyo Trains Can Dictate Your App's Success</h3>
+                                    <p>Product management, design, growth</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- WORK 1 END -->
+                    <!-- WORK 2 START -->
+                    <div class="col-sm-6 col-xs-12 portfolio-item entrepreneurship">
+                        <a class="open-project" onclick="loadSite('articles/article2.html')">
+                            <div class="portfolio-column">
+                                <img src="articles/images/readwrite.png" alt="">
+                                <div class="portfolio-content">
+                                    <h3>10 Lessons from Finland's Summer of Startups</h3>
+                                    <p>Entrepreneurship</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- WORK 2 END -->
+                    <!-- WORK 3 START -->
+                    <div class="col-sm-6 col-xs-12 portfolio-item games entrepreneurship">
+                        <a class="open-project" onclick="loadSite('articles/article3.html')">
+                            <div class="portfolio-column">
+                                <img src="articles/images/readwrite.png" alt="">
+                                <div class="portfolio-content">
+                                    <h3>How Rovio Builds a Brand to Last</h3>
+                                    <p>Product management, growth</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- WORK 3 END -->
+                    <!-- WORK 4 START -->
+                    <div class="col-sm-6 col-xs-12 portfolio-item entrepreneurship">
+                        <a class="open-project" onclick="loadSite('articles/article4.html')">
+                            <div class="portfolio-column">
+                                <img src="articles/images/siliconangle.png" alt="">
+                                <div class="portfolio-content">
+                                    <h3>The Brief History of Funrank, An Agile Startup from Finland</h3>
+                                    <p>Entrepreneurship</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- WORK 4 END -->
+                    <!-- WORK 5 START -->
+                    <div class="col-sm-6 col-xs-12 portfolio-item entrepreneurship other">
+                        <a class="open-project" onclick="loadSite('articles/article5.html')">
+                            <div class="portfolio-column">
+                                <img src="articles/images/siliconangle.png" alt="">
+                                <div class="portfolio-content">
+                                    <h3>Luxury Paid For in the Currency of Privacy</h3>
+                                    <p>Technology, privacy</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- WORK 5 END -->
+                    <!-- WORK 6 START -->
+                    <div class="col-sm-6 col-xs-12 portfolio-item games entrepreneurship">
+                        <a class="open-project" onclick="loadSite('articles/article6.html')">
+                            <div class="portfolio-column">
+                                <img src="articles/images/readwrite.png" alt="">
+                                <div class="portfolio-content">
+                                    <h3>Design Tips from the Designer of Fruit Ninja</h3>
+                                    <p>Design, product management</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- WORK 6 END -->
+                    <!-- WORK 7 START -->
+                    <div class="col-sm-6 col-xs-12 portfolio-item entrepreneurship other">
+                        <a class="open-project" onclick="loadSite('articles/article7.html')">
+                            <div class="portfolio-column">
+                                <img src="articles/images/arcticstartup.png" alt="">
+                                <div class="portfolio-content">
+                                    <h3>7 Ways Nokia Can Win Again</h3>
+                                    <p>Technology, growth</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- WORK 7 END -->
+                    <!-- WORK 8 START -->
+                    <div class="col-sm-6 col-xs-12 portfolio-item entrepreneurship games">
+                        <a class="open-project" onclick="loadSite('articles/article8.html')">
+                            <div class="portfolio-column">
+                                <img src="articles/images/gamasutra.png" alt="">
+                                <div class="portfolio-content">
+                                    <h3>5 Tips for the Global Game Jam</h3>
+                                    <p>Product management, entrepreneurship</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- WORK 8 END -->
+                </div>
+            </div>
+        </div>
+        </div>
+    <!--<div class="row text-center">
+        <div class="col-md-12 btn-email">
+            <a class="btn lowercase">shout@james.com</a>
+        </div>-->
+    </div>
+    <script>
+        $('#article-filters').on('click', function() {
+            //Article masonry
+            var $articlesContainer = $('#article-container');
+            $articlesContainer.isotope({
+                masonry: {
+                    columnWidth: '.portfolio-item'
+                },
+                itemSelector: '.portfolio-item'
+            });
+
+            $('#article-filters').on('click', 'li', function() {
+                $('#article-filters li').removeClass('active');
+                $(this).addClass('active');
+                var filterValue = $(this).attr('data-filter');
+                $articlesContainer.isotope({ filter: filterValue });
+            });
+        });
+    </script>
+</section>
